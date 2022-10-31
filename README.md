@@ -6,4 +6,3 @@ What I learned...
 2. useState,useEffect 대신 서버사이드 렌더링 이용하여 movie 데이터 렌더링 (loading 화면이 보이지 않게 할 수 있음)
 3. style jsx를 이용한 css 스타일 적용
 4. Redirect, Rewrite를 이용해서 API_KEY를 비공개로 전환
-5. Server Side Rendering은 gh-pages에서 지원하지 않기 때문에 Vercel을 이용한 배포 완료
