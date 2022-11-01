@@ -55,15 +55,14 @@ export default function Home({ results }) {
   );
 }
 
-let baseUrl = "http://localhost:3000/api/movies";
-if (process.env.Vercel_URL) {
-  baseUrl =
-    process.env.Vercel_URL === "https://something-else.now.sh"
-      ? "https://exmaple.com"
-      : process.env.Vercel_URL;
-}
-
 export async function getServerSideProps() {
+  let baseUrl = "http://localhost:3000/api/movies";
+  if (process.env.Vercel_URL) {
+    baseUrl =
+      process.env.Vercel_URL === "https://something-else.now.sh"
+        ? "https://exmaple.com"
+        : process.env.Vercel_URL;
+  }
   const { results } = await (
     await fetch(`http://localhost:3000/api/movies`)
   ).json();
