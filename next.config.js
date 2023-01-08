@@ -3,15 +3,6 @@ const API_KEY = "e0a23b9d45414be32063355991c65068";
 
 const nextConfig = {
   reactStrictMode: true,
-  async redirects() {
-    return [
-      {
-        source: "/old-blog/:path*",
-        destination: "/new-sexy-blog/:path*",
-        permanent: false,
-      },
-    ];
-  },
   async rewrites() {
     return [
       {
